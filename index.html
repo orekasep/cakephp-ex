@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="title" content="InstextUs - Colorful TEXT for INSTAGRAM" />
+	<meta name="description" content="InstextUs is a gorgeous and simple app to put colour TEXT on top of your photo." />
+	<meta name="keywords" content="instextus,text,instagram,jusgramm,text2pic,quote,picoftheday,iPhone,iPad,iPod,iPod touch,Apple" />
+	<meta name="language" content="en" />
+	<meta name="robots" content="index, follow" />
+
+	<title>InstextUs &middot; VNMSS.COM</title>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8"></link>
+	<link rel="shortcut icon" href="images/favicon.ico" >
+	<link rel="image_src" href="http://www.vnmss.com" />
+	
+	<!-- jQuery library (served from Google) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		var screenshots = ['images/instextus01.png','images/instextus02.png','images/instextus03.png','images/instextus04.png','images/instextus05.png'];
+
+		$.fn.preload = function() {
+		    this.each(function(){
+		        $('<img />').attr('src', this);
+		    });
+		}
+
+		// Preload Usage:
+		$(screenshots).preload();
+
+    	var index = 1;
+		setInterval(
+		    (function slider() {
+		    	$('#demo').fadeOut('slow', function() {
+					// Animation complete
+					$('#demo').attr('src', screenshots[index]);
+					$('#demo').fadeIn('fast', function() {
+						index += 1;
+						if (index == screenshots.length) {
+							index = 0;
+						}						
+					});
+				});
+		        return slider;
+		    })(), 5000);
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-41996992-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="left" class="half">
+		<div id="logo" class="onRight">
+			<a id="contact" href="http://www.instext.us"><img src="images/logoRibbon.png" alt="Guerrilla Code"></img></a>
+		</div>
+		<div id="title" class="onRight">
+			<img src="images/instextus.png" alt="InstextUs"></img>
+		</div>
+		<div id="features" class="onRight">
+			<p><strong>You can post text to Instagram and share your thoughts with all of your followers!</strong><br/><span id="it">It's easy, simple to make your text look awesome<br/>with so many templates, frames and fonts just in seconds </span></p>
+			<ul class="feats">
+			<li>extremely easy to use</li>
+			<li>gorgeous design</li>
+			<li>more than 160 backgrounds</li>
+			<li>plus 15 polaroid photos</li>
+			<li>with 60 creative frames</li>
+			<li>add 60 beautiful fonts</li>
+			<li>and 100 funny emoticons</li>
+			</ul>
+
+			<span id="it">Now InstextUs become Universal APP which support for both iPhone and iPad screen.</span>
+		</div>
+		<div id="download" class="onRight">
+			<a href="https://play.google.com/store/apps/details?id=us.instext.instextus2&hl=en"><img src="images/playStore.png" alt="Download from the AppStore"></img></a>
+			<a href="http://x.co/instextus"><img src="images/appStore.png" alt="Download from the AppStore"></img></a><br/>
+		</div>
+		<div id="price">
+			<a href="http://x.co/instextus"><img src="images/price.png" alt="99&cent;"></img></a>
+		</div>
+	</div>
+	<div id="right" class="half">
+		<div id="hlshadow"></div>
+		<div id="screenshot">
+			<div id="press"><a href="#"><img src="images/press.png" alt="Press"></img>Press Kit</a> &middot; <a href="http://www.instext.us/privacy">Privacy</a></div>
+			<div id="slide">
+				<img id="demo" src="images/instextus01.png">
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+
+</html>

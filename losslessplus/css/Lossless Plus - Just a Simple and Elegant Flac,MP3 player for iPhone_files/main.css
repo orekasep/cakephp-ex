@@ -1,0 +1,120 @@
+body {
+	font-family: "Proxima Nova";
+	font-size: 13px;
+	color: #fff;
+}
+
+.fp-tableCell {
+	position: relative;
+}
+
+h2.title {
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 4px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+
+.top-bg {
+	background-image: url(../images/top_bg.png);
+	width: 100%;
+	height: 95px;
+	position: absolute;
+	top: 0;
+}
+
+.logo {
+	display: block;
+	width: 150px;
+	height: 140px;
+	margin: 0 auto;
+}
+
+.logo img {
+	width: 150px;
+}
+
+.margin {
+	height: 200px;
+}
+
+.slogan {
+	width: 60%;
+	margin: 0 auto;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.appstore {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.screenshot1 {
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	background: url(../images/screenshot1.png) no-repeat center;
+	background-position: top;
+}
+
+.feature {
+	display: block;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.feature > img {
+	width: 40%;
+	float: left;
+}
+
+.feature ul {
+	list-style: none;
+	margin-top: 30px;
+}
+
+.feature li {
+	font-size: 18px;
+	letter-spacing: 2px;
+	vertical-align: middle;
+}
+
+.feature li p {
+	display: inline-block;
+	font-size: 16px;
+	margin: 0;
+	vertical-align: middle;
+	height: 10px;
+}
+
+.feature li:first-child {
+	padding-top: 40px;
+}
+
+.content {
+	position: relative;
+	z-index: 10;
+}
+
+.bottom-bg {
+	background-image: url(../images/bottom_bg.png);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+@media (max-width:1200px) {
+	.screenshot1 {
+		height: 200px;
+	}	
+}
